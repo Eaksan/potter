@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+    <div class="cart-page">
+        <div class="e-wrapper">
+            <div class="cart-box">
+                <form action="">
+                    <div class="e-basket-wrapper">
+                        <div class="cart-top">
+                            <div class="e-title"><img src="img/basket.png" alt=""></div>
+                            <a class="cart-button" href="">ВЕРНУТЬСЯ НА САЙТ</a>
+                            <p>*Бесплатная доставка при заказе онлайн  от 2500 руб</p>
+                        </div>
+                        <div class="e-left-wrapper">
+                            <div class="e-item-wrapper">
+                                <div class="title-wrapper">
+                                    <h4>Гарри Потер и Орден Феникса</h4>
+                                </div>
+                                <div class="e-img-wrapper">
+                                    <img src="img/book-small.png" alt="">
+                                </div>
+                                <div class="e-info-wrapper">
+                                    <h4>2560 руб</h4>
+                                    <input type="text" class="spinner" disabled>
+                                </div>
+                            </div>
+                            <div class="e-item-wrapper">
+                                <div class="title-wrapper">
+                                    <h4>Гарри Потер и Орден Феникса</h4>
+                                </div>
+                                <div class="e-img-wrapper">
+                                    <img src="img/book-small.png" alt="">
+                                </div>
+                                <div class="e-info-wrapper">
+                                    <h4>2560 руб</h4>
+                                    <input type="text" class="spinner">
+                                </div>
+                            </div>
+                            <div class="cart-package">
+                                <div class="package-left">
+                                    <select name="" id="">
+                                        <option value="0" data-img="img/box.png">Обычная упаковка</option>
+                                        <option value="300" data-img="img/box1.jpg">Подарочная упаковка</option>
+                                        <option value="500" data-img="img/box.png">Супер упаковка</option>
+                                    </select>
+                                    <div class="package-cost">
+                                        Цена <span>0</span>руб
+                                    </div>
+                                </div>
+                                <div class="package-right">
+                                    <img src="img/box.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cart-promot">
+                                <h4>Введите промокод</h4>
+                                <div class="promot-form">
+                                    <input type="text" placeholder="Промокод">
+                                    <button type="submit">ПРОВЕРИТЬ</button>
+                                </div>
+                            </div>
+                            <div class="final-price">
+                                <h5>Итого: <span>5120 руб</span></h5>
+                            </div>
+                        </div>
+                        <div id="accordion" class="e-right-wrapper" role="tablist" aria-multiselectable="true">
+                            <div class="panel">
+                                <div class="right-title">
+                                    <h3>Оформление заказа</h3>
+                                </div>
+                                <div  class="panel-heading" role="tab">
+                                    <div class="e-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#etab1" aria-expanded="true" aria-controls="etab1">
+                                        Шаг первый | Ваши данные
+                                    </div>
+                                </div>
+                                <div id="etab1" class="e-basket-form e-tab panel-collapse collapse in" role="tabpanel">
+                                    <div class="tab-wrapper">
+                                        <div class="e-input-box">
+                                            <label for="">Фамилия</label>
+                                            <input type="text">
+                                            <div class="input-info">Для корректного оформления заказа</div>
+                                        </div>
+                                        <div class="e-input-box">
+                                            <label for="">Имя</label>
+                                            <input type="text">
+                                            <div class="input-info"></div>
+                                        </div>
+                                        <div class="e-input-box">
+                                            <label for="">Email</label>
+                                            <input type="text">
+                                            <div class="input-info error">Для корректного оформления заказа</div>
+                                        </div>
+                                        <div class="e-input-box">
+                                            <label for="">Телефон</label>
+                                            <input type="text">
+                                            <div class="input-info">Для корректного оформления заказа</div>
+                                        </div>
+                                        <div class="cart-nav">
+                                            <div class="e-next">
+                                                <button class="next" role="button" data-toggle="collapse" data-parent="#accordion" href="#etab2">Далее</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div  class="panel-heading" role="tab">
+                                    <div class="e-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#etab2" aria-expanded="false" aria-controls="etab2">
+                                        Шаг второй | Адрес доставки
+                                    </div>
+                                </div>
+                                <div id="etab2" class="e-basket-adres e-tab panel-collapse collapse" role="tabpanel">
+                                    <div class="tab-wrapper">
+                                        <div class="e-input-addres">
+                                            <span>Адрес</span>
+                                            <input type="text" class="large" placeholder="Улица">
+                                            <input type="text" class="small" placeholder="Дом">
+                                            <input type="text" class="small" placeholder="Квартира">
+                                        </div>
+                                        <div class="cart-nav">
+                                            <div class="e-prev">
+                                                <button class="prev" role="button" data-toggle="collapse" data-parent="#accordion" href="#etab1">Назад</button>
+                                            </div>
+                                            <div class="e-next">
+                                                <button class="next" role="button" data-toggle="collapse" data-parent="#accordion" href="#etab3">Далее</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div  class="panel-heading" role="tab">
+                                    <div class="e-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#etab3" aria-expanded="false" aria-controls="etab3">
+                                        Шаг третий | Способ оплаты
+                                    </div>
+                                </div>
+                                <div id="etab3" class="e-payment e-tab panel-collapse collapse" role="tabpanel">
+                                    <div class="tab-wrapper">
+                                        Выберите способ оплаты
+                                        <div class="pay-type">
+                                            <input type="radio" name="pay-type" id="pay-type1" checked>
+                                            <label for="pay-type1">ОПЛАТА ОНЛАЙН</label>
+                                            <input type="radio" name="pay-type" id="pay-type2">
+                                            <label for="pay-type2">НАЛОЖЕННЫЙ ПЛАТЕЖ</label>
+                                        </div>
+                                        <div class="cart-nav">
+                                            <div class="e-prev">
+                                                <button class="prev" role="button" data-toggle="collapse" data-parent="#accordion" href="#etab2">Назад</button>
+                                            </div>
+                                        </div>
+                                        <button class="buy">ОФОРМИТЬ ЗАКАЗ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+	<div class="container"></div>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/main.min.css">
+    <script src="js/scripts.min.js"></script>
+    <script src="js/jquery.formstyler.js"></script>
+	<script src="js/slick.js"></script>
+
+</body>
+</html>

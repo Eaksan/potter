@@ -1,0 +1,713 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1680px)
+  header
+    padding-bottom: 40px
+    .e-title
+      margin-bottom: 0
+      margin-top: 0
+  .e-price-info
+  .sect-2, .sect-3, .sect-4, footer
+    background-size: auto
+  .e-book-wrapper
+    max-width: 500px
+    margin-bottom: -100px
+    img
+      max-width: 100%
+      height: auto
+      margin: 0 -10% 0 10%
+  header .header-bottom-btn
+    margin-top: 0
+  .blogers .e-title:after
+    right: -15px
+    background-size: contain
+    width: 500px
+  .reviews, .blogers
+    .e-review-slider
+      .slick-next
+        right: -10px
+      .slick-prev
+        left: -10px
+
+@media only screen and (max-width: 1200px)
+  header .e-title
+    margin-top: 40px
+  .e-wrapper
+    width: 970px
+  .e-top-infobox
+    img
+      max-width: 100%
+      height: auto
+  .chrsale-left
+    max-width: 350px
+    flex-basis: 350px
+  .e-infobox-order a.phone
+    font-size: 15px
+  .e-sect3-item img
+    max-height: 240px
+  .sect-5 .e-castle-wrapper
+    margin-left: -330px
+  .sect-1
+    padding-bottom: 64px
+  #basket .modal-dialog
+    width: 480px
+    margin-left: auto
+    margin-right: auto
+  .e-basket-wrapper
+    flex-wrap: wrap
+    .e-left-wrapper
+      order: 3
+      width: 100%
+    .e-right-wrapper
+      width: 100%
+  .e-basket-wrapper .e-item-wrapper
+    width: 100%
+  .e-tab .e-input-box-width input, .e-tab .e-input-box input
+    width: 90%
+  .e-tab .e-input-box
+    width: 100%
+  .e-tab .e-next
+    text-align: center
+  .e-basket-wrapper .e-right-wrapper
+    border-left: none
+  .e-basket-wrapper .e-right-wrapper .e-title:last-child
+    border-bottom: 1px solid #ccc
+  .reviews, .blogers
+    .slide-wrapper
+      justify-content: center
+  .review-header
+    text-align: center
+  .cart-box .e-left-wrapper
+    order: 1
+  .cart-box .e-right-wrapper
+    width: auto
+    order: 2
+  .how-work
+    .wrapper-flex
+      flex-wrap: wrap
+      background: none
+  .e-title
+    img
+      max-width: 100%
+      height: auto
+  .e-book-wrapper
+    overflow: hidden
+    margin-bottom: -210px
+  .big-book
+    margin: 0
+  .how-box
+    flex-basis: 50%
+    max-width: 50%
+    margin: 0
+    position: relative
+    z-index: 2
+    &:before
+      position: absolute
+      content: ""
+      top: 7px
+      left: 50%
+      margin-left: -57%
+      width: 110%
+      height: 30px
+      background: url("../img/how-big-stick.png") 0 0 no-repeat
+      background-size: 100% auto
+      z-index: -1
+    img
+      max-width: 100%
+      height: auto
+  header .col-md-5 .row
+    display: flex
+    width: 100%
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: 0
+  header .header-bottom-btn
+    margin: 20px 0
+  .blogers .e-title:after
+    content: none
+  .e-price-info
+    padding: 78px 57px 55px 89px
+
+@media only screen and (max-width: 1100px)
+  .reviews, .blogers
+    .e-review-slider .slick-next
+      right: -10px
+    .e-review-slider .slick-prev
+      left: -10px
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .e-wrapper
+    width: 750px
+  .e-top-info
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  .top-logo a
+    top: 477px
+  header
+    background-size: auto 200%
+    li:before
+      left: -7px
+  .e-price-info
+    padding: 58px 40px 52px 56px
+    font-size: 14px
+    background-size: 105% 100%
+  .e-infobox-order
+    width: 100%
+    padding: 0
+    text-align: center
+    max-width: none
+  .e-infobox-order a.order
+    display: inline-block
+    padding-left: 30px
+    padding-right: 30px
+  .top-logo
+    padding-bottom: 107px
+    padding-top: 107px
+  .sect-1 .col-md-5 ul
+    margin: 20px auto
+    display: block
+  .e-sect2-catalog
+    justify-content: space-around
+  .e-sect2-item
+    width: 30%
+  .e-sect3-item img
+    max-height: 190px
+  .e-sect3-item:nth-child(2) img
+    margin-left: -43px
+  .hat-wrapper
+    height: 400px
+    margin: 113px 0 0 -213px
+    img
+      max-height: 100%
+  .sect-5
+    padding-bottom: 107px
+  .sect-5 .e-castle-wrapper
+    height: 600px
+    margin-left: -277px
+    margin-top: -92px
+    img
+      max-height: 100%
+  .invitation
+    .mob-logo
+      margin-left: auto
+      margin-right: auto
+      max-width: 100%
+      height: auto
+      display: block
+    .pc-logo
+      display: none
+    .e-letter-left, .e-letter-right
+      display: none
+  .reviews
+    padding-bottom: 35px
+  .book-modal .modal-dialog
+    width: 500px
+  .book-modal .e-modal-book-wrapper
+    flex-wrap: wrap
+    .e-left, .e-right
+      flex-basis: 100%
+      max-width: none
+    .e-left
+      max-width: 100%
+  .book-modal form input
+    max-width: 100%
+    width: 100%
+  .cart-box
+    margin: 70px 20px
+  .cart-box .e-left-wrapper
+    flex-basis: 100%
+    max-width: 100%
+  .cart-box .e-right-wrapper
+    flex-basis: 100%
+    max-width: 100%
+  .cart-box .e-input-box
+    justify-content: flex-start
+    flex-direction: column
+    label
+      flex-basis: auto
+      align-self: flex-start
+    input
+      flex-basis: auto
+  .cart-box .input-info
+    flex-basis: auto
+  .blogers-wrapper
+    flex-direction: column
+    & > .col50
+      flex-basis: 100%
+      max-width: 100%
+      margin-bottom: 40px
+  footer
+    background-size: 100% 100%
+    .wrapper-flex
+      flex-wrap: wrap
+      justify-content: center
+    .col33
+      flex-basis: 50%
+      max-width: 50%
+  .footer-center
+    order: 4
+    margin-top: 0
+  .sect-1 .orange-btn
+    margin-left: 45px
+  .order-now-price
+    transform: none
+    padding-top: 10px
+    padding-left: 20px
+  .gift-paper iframe
+    width: 95%
+    height: 200px
+  .gift-paper-video
+    flex-direction: column
+  .gift-paper-order:after
+    left: auto
+  .gift-paper .orange-btn
+    margin-left: 0
+  .set-slider
+    max-width: 100%
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .e-wrapper
+    width: 100%
+    padding: 0 15px
+  .top-logo img
+    width: 450px
+    height: auto
+  .orange-btn
+    font-size: 13px
+    padding: 7px 20px 3px
+  .e-top-info
+    justify-content: space-around
+  .e-top-infobox
+    max-width: 50%
+  .e-infobox-order
+    width: 100%
+    max-width: none
+  .top-logo a
+    top: 328px
+    padding: 8px 9px
+  .christmas-top-logo
+    padding-top: 45px
+  .chrsale-left img
+    max-width: 55%
+    margin-top: 16px
+  .chrsale-right
+    li
+      font-size: 13px
+      &:first-letter
+        font-size: 18px
+    ul
+      margin: 15px 0 0 25px
+  .christmas-sale-btn
+    a
+      margin: 0
+      transform: rotate(1.1deg)
+      &:after
+        content: none
+  .sect-1 .col-md-7 .e-book-wrapper
+    height: 400px
+    margin: 0
+    right: -15px
+    top: -440px
+    width: 354px
+    img
+      max-height: 100%
+  .e-sect2-item
+    width: auto
+  .e-sect3-item
+    width: 33.3%
+  .hat-wrapper
+    display: none
+  .sect-4
+    text-align: center
+    padding-bottom: 70px
+    .e-title
+      padding-top: 60px
+  .e-pay-info:before
+    content: none
+  .e-pay-info
+    margin: 30px 0
+  .sect-5
+    padding: 35px 0
+    .e-castle-wrapper
+      display: none
+  .sect-5 .col-sm-6.right
+    text-align: center
+  footer
+    padding: 40px 0
+    p
+      margin-top: 20px
+    a
+      margin-top: 15px
+  .reviews
+    padding-bottom: 0
+    .e-review-slider
+      margin-top: 40px
+  .modal-dialog
+    margin-left: auto
+    margin-right: auto
+  .e-sect3-wrapper
+    flex-wrap: wrap
+  .e-sect3-item
+    width: 100%
+  .e-sect3-item:nth-child(3) img
+    margin-left: 0px
+  .cart-box .cart-nav
+    justify-content: flex-end
+  .cart-box .e-input-addres
+    span
+      padding-bottom: 10px
+    input
+      margin-left: 0
+      margin-bottom: 20px
+      &.small
+        margin-right: 14px
+        flex-basis: calc(50% - 7px)
+        max-width: calc(50% - 7px)
+        &:last-child
+          margin-right: 0
+      &.large
+        flex-basis: 100%
+        max-width: 100%
+  header
+    padding-bottom: 40px
+  .e-book-wrapper
+    display: none
+  .book-mob
+    display: block
+  .sect-1
+    .col-md-5
+      padding-top: 20px
+      text-align: center
+      ul
+        display: inline-block
+        text-align: left
+      
+  .sect-1 .wrapper-flex
+    flex-direction: column
+  .sect-1 .orange-btn
+    margin: 30px 0
+  .sect-1-order
+    &.hidden-mob
+      display: none !important
+    &.visible-mob
+      display: flex !important
+    padding: 15px 20px
+    text-align: center
+  .sect-1-order .order-now
+    order: 2
+    font-size: 14px
+  .order-now-price
+    line-height: 30px
+  .sect-1 .orange-btn
+    margin: 10px 0
+  .set-slider
+    max-width: 485px
+  .order-now
+    br
+      display: none
+  .e-sect3-item .where
+    text-align: center
+  .gift-paper
+    iframe
+      height: 270px
+    .col50
+      max-width: 100%
+      flex-basis: auto
+      text-align: center
+      ul
+        display: inline-block
+        text-align: left
+    .wrapper-flex
+      flex-direction: column
+  .gift-paper-order
+    margin: 0 0 30px
+  footer
+    p
+      text-align: center
+    .wrapper-flex
+    .col33
+      max-width: 400px
+      flex-basis: auto
+  .footer-manager
+    text-align: center
+  .footer-center
+    margin-top: 0
+  .footer-map
+    margin-top: 20px
+  .e-sect3-item li
+    display: inline-block
+  .sect-1 .col-md-5
+    padding: 30px 15px 0
+  .sect-1 .e-title
+    margin-bottom: 0
+  .how-box:before
+    width: 100%
+    margin-left: -50%
+  .e-price-info
+    margin-left: auto
+    margin-right: auto
+    max-width: 460px
+    display: block
+  .set-slider
+    float: none
+    margin-left: auto
+    margin-right: auto
+  .sect-1-order, .sect-1-order.dog-bg
+    margin: 0 auto 20px
+    padding-left: 20px
+    padding-right: 20px
+  .gift-paper-order
+    text-align: center
+    width: 100%
+    &:after
+      content: none
+  .blogers
+    padding-left: 10px
+    padding-right: 10px
+  .e-sect3-item li
+    padding-bottom: 3px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 676px)
+  .e-book-wrapper
+    display: none
+  .sect-1, .sect-2
+    text-align: center
+  .e-title
+    img
+      display: block
+      margin: 0 auto
+  .visible-mob
+    display: block !important
+  .hidden-mob
+    display: none !important
+  .sect-1 .col-md-5 ul
+    margin-right: 0
+    padding: 0 20px
+  .sect-1 .col-md-5
+    padding-top: 0
+  .book-mob
+    display: block
+    padding-top: 30px
+  .sect5-col
+    width: 100%
+    margin-top: 40px
+  #vk_groups
+    margin-left: auto
+    margin-right: auto
+  .sect5-col:first-child
+    padding-right: 0
+  .sect-6
+    padding: 40px 0 30px
+  #basket
+    .modal-dialog
+      width: 310px
+    .e-title
+      padding-left: 10px
+      padding-right: 10px
+      img
+        display: block
+        max-width: 100%
+        height: auto
+  .e-basket-wrapper .e-img-wrapper
+    width: 50%
+  .book-modal .e-right .e-shadow-box li
+    padding-top: 10px
+    padding-bottom: 10px
+  .cart-box
+    margin: 40px 5px
+  .cart-box .e-input-box
+    flex-basis: 100%
+    max-width: 100%
+    &:nth-child(2n)
+      margin: 0
+  .blogers
+    .col50
+      flex-basis: 100%
+      max-width: 100%
+    .wrapper-flex:not(.bloger-review)
+      flex-wrap: wrap
+      flex-direction: column-reverse
+  .bloger-review
+    padding-bottom: 20px
+  .how-work
+    background-position: 0 50px, 100% 85%, 100% 98%
+  .how-box
+    flex-basis: auto
+    max-width: 100%
+  .how-work .wrapper-flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  .sect-1-order.dog-bg:before
+    content: none
+  .sect-1 .col-md-7
+    text-align: center
+@media only screen and (max-width: 500px)
+  .book-modal .modal-dialog
+    width: 300px
+  .book-modal .e-right
+    h3, h4
+      font-size: 14px
+      line-height: 18px
+      margin: 20px 0
+  .cart-box
+    .cart-button
+      margin-bottom: 20px
+    .cart-top
+      .e-title
+        flex-basis: 100%
+        margin-bottom: 10px
+        img
+          margin-left: 0
+      p
+        font-size: 11px
+    .e-input-box input
+      width: 100%
+    .e-prev
+      display: none
+    .e-right-wrapper
+      padding: 0
+    .promot-form
+      flex-wrap: wrap
+    .e-img-wrapper
+      flex-basis: 100%
+      width: auto
+      max-width: 100%
+      img
+        display: block
+        margin-left: auto
+        margin-right: auto
+        max-height: 165px
+    .e-info-wrapper
+      flex-basis: 100%
+      width: auto
+      max-width: 100%
+    .e-basket-wrapper
+      padding: 25px 3px
+    .cart-promot, .final-price
+      margin-right: 0
+    .e-right-wrapper .e-title
+      font-size: 11px
+  .cart-box .promot-form input, .cart-box .promot-form button
+    flex-basis: 100%
+    max-width: 100%
+  .cart-box .promot-form input
+    margin-bottom: 15px
+  header .e-title
+    margin-bottom: 0
+  .e-sect3-item img
+    min-height: none
+    max-width: 100%
+    height: auto
+  .blogers
+    padding-top: 20px
+    .e-title
+      padding-bottom: 0
+
+
+@media only screen and (max-width: 480px)
+  .top-logo img
+    width: auto
+    height: auto
+  .top-logo .mob-logo
+    display: block
+    max-width: 100%
+    height: auto
+  .pc-logo
+    display: none
+  .top-logo
+    padding: 50px 0
+    a
+      position: static
+      transform: none
+      background-image: url("../img/top-button.png")
+      background-repeat: no-repeat
+      background-position: center
+      background-color: transparent
+      color: transparent
+      background-size: cover
+      opacity: 1
+      padding: 22px 49px
+      margin-top: 20px
+  .e-sect3-wrapper
+    flex-wrap: wrap
+    justify-content: space-around
+  .e-sect3-item
+    width: auto
+  .e-pay-info + img
+    padding: 0
+    width: 100%
+    height: auto
+  .e-garanty-info
+    margin-left: 0
+    ul
+      padding: 0 30px
+  .sect-1 .nav-tabs
+    margin-bottom: 0
+    flex-direction: column
+    align-items: center
+  .sect-1 .nav-tabs li
+    display: block
+    margin: 0 0 20px
+    a
+      padding: 5px
+  .sect-1, .sect-2
+    padding: 50px 0
+  .full-set-sect
+    padding-top: 20px
+  .sect-1 .col-md-5
+    padding-top: 0
+  .e-sect2-item
+    margin-bottom: 40px
+  .sect-2
+    padding-bottom: 10px
+  .cart-box
+    .cart-package
+      flex-wrap: wrap
+    .package-left, .package-right
+      flex-basis: 100%
+      max-width: 100%
+  .how-work
+    .e-wrapper
+      display: block
+  .how-box
+    max-width: 90%
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px)
+  /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px)
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px)
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px)
+  /**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+  /**/
+
