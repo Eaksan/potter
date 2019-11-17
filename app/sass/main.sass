@@ -41,6 +41,7 @@ body
   background: url("../img/top-bg.jpg") center 0 no-repeat
   background-color: #111
   background-size: 100% auto
+  color: #333
 
 a
   transition: 0.3s
@@ -95,24 +96,18 @@ a
   font-size: 15px
   letter-spacing: 0.05em
   font-weight: bold
-  line-height: 40px
-  color: #000
-  text-shadow: 0.5px 0.866px 0 rgba(255, 255, 255, 0.53)
-  background: linear-gradient(to bottom, #ffc025 0%, #ffa825 50%, #ff7800 100%)
-  background-position-y: 0
-  background-size: 200%
-  -webkit-box-shadow: 0 4px 0 #d08a1d
-  box-shadow: 0 4px 0 #d08a1d
-  -webkit-border-radius: 3px
-  border-radius: 3px
-  padding: 7px 44px 3px
+  line-height: 1.2
+  color: $black
+  background-color: #FFA926
+  box-shadow: 0 4px 0 #D08A1D
+  border-radius: 4px
+  padding: 12px 44px
   transition: 0.5s
 
   &:hover
-    color: #000
-    background-position-y: 70%
-    box-shadow: 0 0 3px rgba(#ff7800, 0.7)
-    transform: translateY(-2px)
+    color: $black
+    box-shadow: 0 0 0 #D08A1D
+    background-color: darken(#FFA926, 5)
 
   &:focus
     box-shadow: none
@@ -842,8 +837,6 @@ header
   .col-sm-6.right
     text-align: right
 
-  .e-title
-
 .e-garanty-info
   border: 1px solid #e6e5e6
   margin-top: 33px
@@ -876,93 +869,78 @@ header
   &:first-child
     padding-right: 60px
 
-footer
-  background: url("../img/footer-bg.png") center 0 no-repeat
-  background-size: 100% 100%
-  padding: 30px 0 40px
+.footer
   text-align: center
+  background-color: #fff
+  padding: 30px 0
 
-  .col33
-    padding: 0 20px
+  h3
+    font-size: 32px
+    line-height: 1.15
+    font-weight: bold
+
+.footer-title
+  font-family: $title-font
+  position: relative
+  margin-bottom: 60px
+
+  h2
+    font-size: 55px
+
+.footer-title-hat
+  position: absolute
+  right: -20px
+  top: -106px
+  max-width: 45%
 
   img
+    display: block
     max-width: 100%
     height: auto
 
-  p
-    font-size: 20px
-    color: #ffffff
-    line-height: 30px
-    margin-top: 10px
-    text-align: left
-    letter-spacing: 0.05em
-    margin-bottom: 20px
 
-  iframe
-    width: 100%
-    height: 240px
+.footer-body
+  color: $white
+  background: url('../img/footer-bg.png') center no-repeat
+  background-size: cover
+  border-radius: 30px
+  padding: 95px 0
 
-  a
-    color: #ffbf25
+  .transparent-btn
+    min-width: 268px
+    max-width: none
+    border-radius: 0
+    margin-bottom: 23px
+    border: 1px solid #FFFFFF
+    font-weight: 600
+    font-size: 18px
+    line-height: 1.35
+    text-align: center
+    padding: 14px 20px
 
-    &:hover
-      color: #ffbf25
-
-  .e-title
-    margin: 0 0 20px
-
-.footer-row
-  color: #fff
-  display: flex
-  align-items: flex-start
-  text-align: left
-  margin: 20px 0
-
-  a
-    color: #ffbf25
-    text-shadow: 0 0 2px rgba(#ffbf25, 0.4)
-
-    &:hover
-      text-shadow: none
-
-.footer-row-icon
-  flex-basis: 60px
-  max-width: 60px
-  text-align: center
-
-.footer-row-link
-  flex-basis: calc(100% - 60px)
-  max-width: calc(100% - 60px)
-
-.footer-line
-  width: 100%
-  height: 2px
-  background-color: #6b6b6b
-  -webkit-border-radius: 5px 1px 50% 40%
-  -moz-border-radius: 5px 1px 50% 40%
-  border-radius: 5px 1px 50% 40%
-
-.footer-offerta
-  font-size: 12px
-  width: 100%
-  display: flex
-  justify-content: space-between
-
-  a
-    color: #6b6b6b
-
-.footer-manager
-  text-align: left
+.footer-left
+  max-width: 360px
+  margin: 0 auto
 
 .footer-center
-  margin-top: 65px
-  order: 2
+  max-width: 230px
+  margin: 0 auto
 
-.footer-map
-  order: 3
+.footer-center-icon, .footer-center-text
+  margin-bottom: 10px
 
-  p
-    text-align: center
+.footer-center-icon
+  flex-basis: 30px
+  max-width: 30px
+  margin-right: 10px
+
+  svg
+    display: inline-block
+
+.footer-center-text
+  flex-basis: calc(100% - 40px)
+  max-width: calc(100% - 40px)
+
 
 .modal-dialog
   margin-top: 60px
