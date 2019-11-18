@@ -21,6 +21,7 @@ $(function () {
         var slider = $(e.currentTarget);
         var maxHeight = 1;
         var slides = slider.find('.slick-slide');
+        if (window.innerWidth < 768) return;
         slides.each(function (index, elem) {
             var elemStyle = window.getComputedStyle(elem, null);
             var height = parseInt(elemStyle.getPropertyValue("height"));
@@ -35,7 +36,8 @@ $(function () {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    adaptiveHeight: true
                 }
             }
         ]
