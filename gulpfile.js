@@ -39,6 +39,9 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick-1.8.1/slick/slick.js',
+		'app/libs/fancybox-master/dist/jquery.fancybox.js',
+		'app/libs/jQueryFormStyler-master/dist/jquery.formstyler.js',
+		'app/libs/lozad/lozad.min.js',
 		// 'app/libs/jquery-ui/jquery-ui.min.js',
 		'app/js/common.js', // Always at the end
 		])
