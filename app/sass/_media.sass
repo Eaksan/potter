@@ -150,6 +150,11 @@
   .e-sect2-item
     h4
       font-size: 18px
+
+  .title-bg, .title-bg-big
+    &:before
+      content: none
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .container, .e-wrapper
@@ -478,6 +483,7 @@
       ul
         display: inline-block
         text-align: left
+        margin: 10px 0 0 10px
 
     .wrapper-flex
       flex-direction: column
@@ -526,11 +532,27 @@
 
     &:after
       content: none
+
   .blogers
     padding-left: 10px
     padding-right: 10px
+
   .e-sect3-item li
-    padding-bottom: 3px
+    padding: 0 0 3px
+
+    margin-bottom: 10px
+    width: 100%
+
+    &:before
+      top: calc(100% + 5px)
+      width: 100%
+      left: 0
+      height: 2px
+
+    &:last-child
+      &:before
+        content: none
+
 
   .blogers, .reviews
     padding: 40px 0
@@ -544,11 +566,16 @@
   .review-img
     min-height: auto
     margin-bottom: 10px
+    margin-right: 0
 
     .person
       display: block
       max-width: 100%
       margin: 0 auto
+
+  .slide-wrapper-top
+    display: block
+    margin-bottom: 10px
 
   .review-text
     p
@@ -567,6 +594,9 @@
 @media only screen and (max-width: 676px)
   .e-book-wrapper
     display: none
+
+  .e-title
+    line-height: 1.3
 
   .sect-1, .sect-2
     text-align: center
@@ -667,6 +697,18 @@
   .sect-1 .col-md-7
     text-align: center
 
+  .new-translate h3
+    margin-bottom: 0
+
+  .book-translate
+    margin: -50px 0
+
+  .sect-3
+    padding: 40px 0
+    background-image: url(../img/phoenix-bg.png), url(../img/how-snitch.png), url(../img/how-text-bg.png)
+    background-position: 0 50px, 100% 100px, 100% 470px
+    background-size: 20%
+
 @media only screen and (max-width: 500px)
   .book-modal .modal-dialog
     width: 300px
@@ -726,23 +768,41 @@
 
     .e-right-wrapper .e-title
       font-size: 11px
+
   .cart-box .promot-form input, .cart-box .promot-form button
     flex-basis: 100%
     max-width: 100%
+
   .cart-box .promot-form input
     margin-bottom: 15px
+
   header .e-title
-    margin-bottom: 0
+    margin: 10px 0 0
+    line-height: 1.4
+
   .e-sect3-item img
-    min-height: none
+    min-height: auto
     max-width: 100%
     height: auto
+
   .blogers
     padding-top: 20px
 
     .e-title
       padding-bottom: 0
 
+  .e-price-info
+    padding: 58px 40px 52px 40px
+
+    li
+      &:before
+        left: 0
+
+    .orange-btn
+      display: block
+      max-width: 190px
+      text-align: center
+      margin: 0 auto
 
 @media only screen and (max-width: 480px)
   .top-logo img
