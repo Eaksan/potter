@@ -1,3 +1,6 @@
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+
 function overflow(block) {
     var leftPosition = block.offset().left,
         boxWidth = block.width(),
@@ -32,6 +35,7 @@ $(function () {
 
     $(".e-review-slider").slick({
         slidesToShow: 2,
+        lazyLoad: 'ondemand',
         responsive: [
             {
                 breakpoint: 768,
@@ -45,6 +49,7 @@ $(function () {
 
     $(".set-slider").slick({
         slidesToShow: 1,
+        lazyLoad: 'ondemand',
         arrows: true
     });
 
@@ -81,12 +86,14 @@ $(function () {
             modalItemInfo.html(itemDesc);
             modalBigSlider.slick({
                 slidesToShow: 1,
+                lazyLoad: 'ondemand',
                 slidesToScroll: 1,
                 fade: true,
                 asNavFor: modalSmallSlider
             });
             modalSmallSlider.slick({
                 slidesToShow: 5,
+                lazyLoad: 'ondemand',
                 slidesToScroll: 1,
                 arrows: false,
                 asNavFor: modalBigSlider,
@@ -115,33 +122,6 @@ $(function () {
             var imagesSmallSlider = modalContent.find('.e-book-prev');
             imagesBigSlider.slick('unslick');
             imagesSmallSlider.slick('unslick');
-        }
-    });
-
-    $('.book-modal').on('beforeLoad   ', function (instance, current, e) {
-        console.log(instance, current, e);
-        if (!$(this).find(".e-book-slider").hasClass("slick-initialized")) {
-            $(this).find(".e-book-slider").slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                fade: true,
-                asNavFor: $(this).find(".e-book-prev")
-            });
-            $(this).find(".e-book-prev").slick({
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                arrows: false,
-                asNavFor: $(this).find(".e-book-slider"),
-                focusOnSelect: true,
-                responsive: [
-                    {
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    }
-                ]
-            });
         }
     });
 

@@ -26,9 +26,6 @@ body input:required:valid,
 body textarea:required:valid
   color: #666
 
-html
-  height: 100%
-
 body
   font-size: 16px
   min-width: 320px
@@ -38,7 +35,9 @@ body
   overflow-x: hidden
   opacity: 1
   letter-spacing: 0.05em
-  background: url("../img/top-bg.jpg") center 0 no-repeat
+  background-image: url("../img/top-bg.jpg")
+  background-position: center 0
+  background-repeat: no-repeat
   background-color: #111
   background-size: 100% auto
   color: #333
@@ -371,7 +370,7 @@ header
       font-weight: 500
       margin-left: auto
       margin-right: auto
-      margin-top: -11px
+      margin-top: 0
 
       b
         font-weight: bold
@@ -740,7 +739,8 @@ header
   padding: 103px 0 0
   background-color: #fff
   background-image: url("../img/phoenix-bg.png"), url("../img/how-snitch.png"), url("../img/how-text-bg.png")
-  background-position: 0 50px, 100% 100px, 100% 470px
+  background-position: 0 50px, 100% 100px, 100% 540px
+  background-size: auto, auto, 10%
   background-repeat: no-repeat
   overflow-x: hidden
 
@@ -765,7 +765,7 @@ header
 
   &:nth-child(3)
     img
-      margin-left: -95px
+      margin: 15px 0 -15px -95px
 
   .where
     font-size: 18px
@@ -1335,7 +1335,7 @@ header
   display: flex
   width: 100%
   align-items: center
-
+  margin-bottom: 10px
 
 .review-img
   flex-basis: 120px
