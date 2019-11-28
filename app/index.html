@@ -18,6 +18,7 @@
   <meta name="msapplication-navbutton-color" content="#000">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <meta name="yandex-verification" content="73f4afa01eef7d19"/>
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -33,7 +34,7 @@
       </div>
       <div class="e-top-infobox e-infobox-order">
         <a href="" class="phone">8 (926) 038 02 22</a>
-        <a href="" class="order">Заказать звонок</a>
+        <a href="#info-modal" data-fancybox class="order js_modal-order">Заказать звонок</a>
       </div>
     </div>
     <div class="e-title">
@@ -51,9 +52,10 @@
                 <li>Отправка без предоплат</li>
                 <li>Все книги новые, имеют хрустящую корку твердый переплет</li>
               </ul>
-              <h5 class="font-number">4770 <span>РУБ</span></h5>
-              <h3 class="font-number">3990 <span>РУБ</span></h3>
-              <a data-toggle="modal" href='#basket' class="orange-btn">Узнать о наличии</a>
+              <h5 class="font-number">4890 <span>РУБ</span></h5>
+              <h3 class="font-number">3390 <span>РУБ</span></h3>
+              <a data-fancybox data-item-index="7" href='#order-modal' class="orange-btn js_modal-order">Узнать о
+                наличии</a>
             </div>
           </div>
         </div>
@@ -100,9 +102,8 @@
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="books">
           <div class="e-sect2-catalog">
-            <div class="e-sect2-item">
+            <div class="e-sect2-item" data-index="0">
               <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/book1-1.png,img/books/book1-2.png,img/books/book1-3.png"
                  data-img-big="img/books/book1-1.png,img/books/book1-2.png,img/books/book1-3.png"
                  data-price="790">
                 <h4 class="item-title">Гарри Поттер и<br>Филосовский Камень</h4>
@@ -124,12 +125,12 @@
                   </ul>
                 </div>
               </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="0">Заказать в 1
+                клик
+              </button>
             </div>
-            <div class="e-sect2-item">
+            <div class="e-sect2-item" data-index="1">
               <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/book2-1.png,img/books/book2-2.png,img/books/book2-3.png"
                  data-img-big="img/books/book2-1.png,img/books/book2-2.png,img/books/book2-3.png">
                 <h4 class="item-title">Гарри Поттер и <br>Тайная Комната</h4>
                 <div class="e-img-wrapper">
@@ -150,12 +151,12 @@
                   </ul>
                 </div>
               </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="1">Заказать в 1
+                клик
+              </button>
             </div>
-            <div class="e-sect2-item">
+            <div class="e-sect2-item" data-index="2">
               <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/book3-1.png,img/books/book3-2.png,img/books/book3-3.png"
                  data-img-big="img/books/book3-1.png,img/books/book3-2.png,img/books/book3-3.png">
                 <h4 class="item-title">Гарри Поттер и <br>Узник Азкабана</h4>
                 <div class="e-img-wrapper">
@@ -176,12 +177,12 @@
                   </ul>
                 </div>
               </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="2">Заказать в 1
+                клик
+              </button>
             </div>
-            <div class="e-sect2-item">
+            <div class="e-sect2-item" data-index="3">
               <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/book4-1.png,img/books/book4-2.png,img/books/book4-3.png"
                  data-img-big="img/books/book4-1.png,img/books/book4-2.png,img/books/book4-3.png">
                 <h4 class="item-title">Гарри Поттер и <br>Кубок Огня</h4>
                 <div class="e-img-wrapper">
@@ -202,12 +203,12 @@
                   </ul>
                 </div>
               </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="3">Заказать в 1
+                клик
+              </button>
             </div>
-            <div class="e-sect2-item">
+            <div class="e-sect2-item" data-index="4">
               <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/book5-1.png,img/books/book5-2.png,img/books/book5-3.png"
                  data-img-big="img/books/book5-1.png,img/books/book5-2.png,img/books/book5-3.png">
                 <h4 class="item-title">Гарри Поттер и <br>Орден Феникса</h4>
                 <div class="e-img-wrapper">
@@ -228,12 +229,12 @@
                   </ul>
                 </div>
               </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="4">Заказать в 1
+                клик
+              </button>
             </div>
-            <div class="e-sect2-item">
+            <div class="e-sect2-item" data-index="5">
               <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/book6-1.png,img/books/book6-2.png,img/books/book6-3.png"
                  data-img-big="img/books/book6-1.png,img/books/book6-2.png,img/books/book6-3.png">
                 <h4 class="item-title">Гарри Поттер и <br>Принц-Полукровка</h4>
                 <div class="e-img-wrapper">
@@ -254,12 +255,12 @@
                   </ul>
                 </div>
               </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="5">Заказать в 1
+                клик
+              </button>
             </div>
-            <div class="e-sect2-item">
+            <div class="e-sect2-item" data-index="6">
               <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/book7-1.png,img/books/book7-2.png,img/books/book7-3.png"
                  data-img-big="img/books/book7-1.png,img/books/book7-2.png,img/books/book7-3.png">
                 <h4 class="item-title">Гарри Поттер и <br>Дары Смерти</h4>
                 <div class="e-img-wrapper">
@@ -278,81 +279,12 @@
                   </ul>
                 </div>
               </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="6">Заказать в 1
+                клик
+              </button>
             </div>
-            <div class="e-sect2-item">
+            <div class="e-sect2-item" data-index="7">
               <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/book8-1.png,img/books/book8-2.png,img/books/book8-3.png"
-                 data-img-big="img/books/book8-1.png,img/books/book8-2.png,img/books/book8-3.png">
-                <h4 class="item-title">Сказки БАРДА БИДЛЯ</h4>
-                <div class="e-img-wrapper">
-                  <img class="lozad" data-src="img/books/book8-1.png" alt="">
-                </div>
-                <span class="old-price">1350<span> руб/шт</span></span>
-                <div class="e-price">850<span> руб/шт</span></div>
-                <div class="book-info d-none">
-                  <ul>
-                    <li>Ориг. название: <span>"Сказки БАРДА БИДЛЯ"</span></li>
-                    <li>Язык издания: <span>Русский</span></li>
-                    <li>Автор: <span>Джоан Кэтлин Роулинг</span></li>
-                    <li>Формат издания: <span>130х200 мм (средний формат)</span></li>
-                    <li>Переплет: <span>Твердый</span></li>
-                  </ul>
-                </div>
-              </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
-            </div>
-            <div class="e-sect2-item">
-              <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/book9-1.png,img/books/book9-2.png,img/books/book9-3.png"
-                 data-img-big="img/books/book9-1.png,img/books/book9-2.png,img/books/book9-3.png">
-                <h4 class="item-title">Фантастические звери и места их обитания</h4>
-                <div class="e-img-wrapper">
-                  <img class="lozad" data-src="img/books/book9-1.png" alt="">
-                </div>
-                <span class="old-price">1350<span> руб/шт</span></span>
-                <div class="e-price">850<span> руб/шт</span></div>
-                <div class="book-info d-none">
-                  <ul>
-                    <li>Ориг. название: <span>"Фантастические звери и места их обитания"</span></li>
-                    <li>Язык издания: <span>Русский</span></li>
-                    <li>Автор: <span>Джоан Кэтлин Роулинг</span></li>
-                    <li>Формат издания: <span>130х200 мм (средний формат)</span></li>
-                    <li>Переплет: <span>Твердый</span></li>
-                  </ul>
-                </div>
-              </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
-            </div>
-            <div class="e-sect2-item">
-              <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/book10-1.png,img/books/book10-2.png,img/books/book10-3.png"
-                 data-img-big="img/books/book10-1.png,img/books/book10-2.png,img/books/book10-3.png">
-                <h4 class="item-title">Квиддич с древности до наших дней</h4>
-                <div class="e-img-wrapper">
-                  <img class="lozad" data-src="img/books/book10-1.png" alt="">
-                </div>
-                <span class="old-price">1350<span> руб/шт</span></span>
-                <div class="e-price">850<span> руб/шт</span></div>
-                <div class="book-info d-none">
-                  <ul>
-                    <li>Ориг. название: <span>"Квиддич с древности до наших дней"</span></li>
-                    <li>Язык издания: <span>Русский</span></li>
-                    <li>Автор: <span>Джоан Кэтлин Роулинг</span></li>
-                    <li>Формат издания: <span>130х200 мм (средний формат)</span></li>
-                    <li>Переплет: <span>Твердый</span></li>
-                  </ul>
-                </div>
-              </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
-            </div>
-            <div class="e-sect2-item">
-              <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/book-set1.png,img/books/book-set2.png,img/books/book-set3.png,img/books/book-set4.png"
                  data-img-big="img/books/book-set1.png,img/books/book-set2.png,img/books/book-set3.png,img/books/book-set4.png">
                 <h4 class="item-title">Полный комплект</h4>
                 <div class="e-img-wrapper">
@@ -371,27 +303,101 @@
                   </ul>
                 </div>
               </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="7">Заказать в 1
+                клик
+              </button>
             </div>
-            <div class="e-sect2-item">
+            <div class="e-sect2-item" data-index="8">
               <a class="btn-item-modal" href="#item-modal"
-                 data-img-small="img/books/ticket-1.png,img/books/ticket-2.png,"
-                 data-img-big="img/books/ticket-1.png,img/books/ticket-2.png,">
-                <h4 class="item-title">Именное письмо из Хогвартса</h4>
+                 data-img-big="img/books/book8-1.png,img/books/book8-2.png,img/books/book8-3.png">
+                <h4 class="item-title">Сказки БАРДА БИДЛЯ</h4>
                 <div class="e-img-wrapper">
-                  <img class="lozad" data-src="img/books/ticket-1.png" alt="">
+                  <img class="lozad" data-src="img/books/book8-1.png" alt="">
                 </div>
-                <span class="old-price">990<span> руб/шт</span></span>
-                <div class="e-price">690<span> руб/шт</span></div>
+                <span class="old-price">1350<span> руб/шт</span></span>
+                <div class="e-price">850<span> руб/шт</span></div>
                 <div class="book-info d-none">
                   <ul>
-                    <li>Именное письмо из Хогвартса</li>
+                    <li>Ориг. название: <span>"Сказки БАРДА БИДЛЯ"</span></li>
+                    <li>Язык издания: <span>Русский</span></li>
+                    <li>Автор: <span>Джоан Кэтлин Роулинг</span></li>
+                    <li>Формат издания: <span>130х200 мм (средний формат)</span></li>
+                    <li>Переплет: <span>Твердый</span></li>
                   </ul>
                 </div>
               </a>
-              <a href="" class="click transparent-btn">Заказать в 1 клик</a>
-              <a href="" class="orange-btn">добавить в корзину</a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="8">Заказать в 1
+                клик
+              </button>
+            </div>
+            <div class="e-sect2-item" data-index="9">
+              <a class="btn-item-modal" href="#item-modal"
+                 data-img-big="img/books/book9-1.png,img/books/book9-2.png,img/books/book9-3.png">
+                <h4 class="item-title">Фантастические звери и места их обитания</h4>
+                <div class="e-img-wrapper">
+                  <img class="lozad" data-src="img/books/book9-1.png" alt="">
+                </div>
+                <span class="old-price">1350<span> руб/шт</span></span>
+                <div class="e-price">850<span> руб/шт</span></div>
+                <div class="book-info d-none">
+                  <ul>
+                    <li>Ориг. название: <span>"Фантастические звери и места их обитания"</span></li>
+                    <li>Язык издания: <span>Русский</span></li>
+                    <li>Автор: <span>Джоан Кэтлин Роулинг</span></li>
+                    <li>Формат издания: <span>130х200 мм (средний формат)</span></li>
+                    <li>Переплет: <span>Твердый</span></li>
+                  </ul>
+                </div>
+              </a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="9">Заказать в 1
+                клик
+              </button>
+            </div>
+            <div class="e-sect2-item" data-index="10">
+              <a class="btn-item-modal" href="#item-modal"
+                 data-img-big="img/books/book10-1.png,img/books/book10-2.png,img/books/book10-3.png">
+                <h4 class="item-title">Квиддич с древности до наших дней</h4>
+                <div class="e-img-wrapper">
+                  <img class="lozad" data-src="img/books/book10-1.png" alt="">
+                </div>
+                <span class="old-price">1350<span> руб/шт</span></span>
+                <div class="e-price">850<span> руб/шт</span></div>
+                <div class="book-info d-none">
+                  <ul>
+                    <li>Ориг. название: <span>"Квиддич с древности до наших дней"</span></li>
+                    <li>Язык издания: <span>Русский</span></li>
+                    <li>Автор: <span>Джоан Кэтлин Роулинг</span></li>
+                    <li>Формат издания: <span>130х200 мм (средний формат)</span></li>
+                    <li>Переплет: <span>Твердый</span></li>
+                  </ul>
+                </div>
+              </a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="10">Заказать в 1
+                клик
+              </button>
+            </div>
+            <div class="e-sect2-item" data-index="11">
+              <a class="btn-item-modal" href="#item-modal"
+                 data-img-big="img/books/book11-1.png,img/books/book11-2.png,img/books/book11-3.png">
+                <h4 class="item-title">Гарри Поттер <br>и проклятое дитя</h4>
+                <div class="e-img-wrapper">
+                  <img class="lozad" data-src="img/books/book11-1.png" alt="">
+                </div>
+                <span class="old-price">1350<span> руб/шт</span></span>
+                <div class="e-price">850<span> руб/шт</span></div>
+                <div class="book-info d-none">
+                  <ul>
+                    <li>Ориг. название: <span>"Гарри Поттер и проклятое дитя"</span></li>
+                    <li>Перевод в стиле "Росмэн" выполнен группой "PotterNews"</li>
+                    <li>Язык издания: <span>Русский</span></li>
+                    <li>Автор: <span>Джоан Кэтлин Роулинг</span></li>
+                    <li>Переплет: <span>Твердый</span></li>
+                  </ul>
+                </div>
+              </a>
+              <button class="click orange-btn js_modal-order" data-src="#order-modal" data-item-index="11">Заказать в 1
+                клик
+              </button>
             </div>
           </div>
         </div>
@@ -428,7 +434,7 @@
             </a>
           </div>
         </div>
-        <a href="" class="orange-btn" id="how-work5">Оставить заявку</a>
+        <a href="#info-modal" data-fancybox class="orange-btn js_modal-order" id="how-work5">Оставить заявку</a>
       </div>
     </div>
   </div>
@@ -452,7 +458,7 @@
               <li>Доставим курьером куда скажете</li>
               <li>Напишем все что пожелаете</li>
             </ul>
-            <a href="" class="orange-btn">узнать стоимость доставки</a>
+            <a href="#info-modal" data-fancybox="" class="orange-btn js_modal-order">узнать стоимость доставки</a>
           </div>
         </div>
         <div class="gift-paper-video wrapper-flex">
@@ -522,12 +528,13 @@
                 Закажи сейчас и получи <br>доставку за наш счет
               </div>
               <div class="order-now-price order-now-old-price">
-                7080 <span>руб</span>
+                8990 <span>руб</span>
               </div>
               <div class="order-now-price">
-                5890 <span>руб</span>
+                6890 <span>руб</span>
               </div>
-              <a href="" class="orange-btn">Заказать набор</a>
+              <a data-fancybox data-item-index="11" href='#order-modal' class="orange-btn js_modal-order">Заказать
+                набор</a>
             </div>
           </div>
           <div class="col-sm-6 col-md-7">
@@ -543,12 +550,13 @@
                 Закажи сейчас и получи <br>доставку за наш счет
               </div>
               <div class="order-now-price order-now-old-price">
-                10490 <span>руб</span>
+                8990 <span>руб</span>
               </div>
               <div class="order-now-price">
-                8960 <span>руб</span>
+                6890 <span>руб</span>
               </div>
-              <a href="" class="orange-btn">Заказать набор</a>
+              <a data-fancybox data-item-index="11" href='#order-modal' class="orange-btn js_modal-order">Заказать
+                набор</a>
             </div>
           </div>
         </div>
@@ -695,12 +703,13 @@
                   Закажи сейчас и получи <br>закладку сову в подарок
                 </div>
                 <div class="order-now-price order-now-old-price">
-                  10490 <span>руб</span>
+                  4890 <span>руб</span>
                 </div>
                 <div class="order-now-price">
-                  3490 <span>руб</span>
+                  3390 <span>руб</span>
                 </div>
-                <a href="" class="orange-btn">Купить набор</a>
+                <a data-fancybox data-item-index="7" href='#order-modal' class="orange-btn js_modal-order">Купить
+                  набор</a>
               </div>
             </div>
           </div>
@@ -720,7 +729,8 @@
               <div class="order-now-price">
                 3390 <span>руб</span>
               </div>
-              <a href="" class="orange-btn">Купить набор</a>
+              <a data-fancybox data-item-index="7" href='#order-modal' class="orange-btn js_modal-order">Купить
+                набор</a>
             </div>
           </div>
         </div>
@@ -843,12 +853,20 @@
       </div>
     </div>
     <div class="row footer-bot justify-content-md-between flex-md-row flex-column">
-      <p class="hidden-mob">© 2019</p>
-      <p><a href="">Политика конфидинциальности</a></p>
-      <p class="hidden-mob">by October agency</p>
+      <p class="hidden-mob col footer-bot-left">© 2019</p>
+      <p class="col"><a data-fancybox class="fancybox-change-close" href="#policy">Политика конфидинциальности</a></p>
+      <p class="hidden-mob col footer-bot-right">by October agency</p>
     </div>
   </div>
 </footer>
+
+<button class="to-cart">
+  <div class="to-cart-img">
+    <img src="img/cart1.png" alt="" class="to-cart-img1">
+    <img src="img/cart2.png" alt="" class="to-cart-img2">
+  </div>
+</button>
+
 <div class="modal book-modal" id="item-modal">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -864,19 +882,101 @@
             <h3 class="modal-item-title"></h3>
             <div class="e-shadow-box">
             </div>
-            <h4>Чтобы купить<br>заполните форму</h4>
-            <form class="modal-book-form" action="">
-              <input class="modal-book-input" type="text" placeholder="Имя">
-              <input class="modal-book-input" type="text" placeholder="Телефон">
-              <input class="modal-book-input" type="text" placeholder="Почта">
-              <button class="btn orange-btn">Купить</button>
-            </form>
+            <div class="form-success-wrapper">
+              <h4>Чтобы купить<br>заполните форму</h4>
+              <form class="modal-book-form js_form" action="">
+                <input name="name" class="modal-book-input" type="text" placeholder="Имя" required>
+                <input name="phone" class="modal-book-input js_phone-mask" type="tel" placeholder="Телефон" required>
+                <input name="email" class="modal-book-input" type="email" placeholder="Почта" required>
+                <input name="itemIndex" class="js_item-index" type="hidden">
+                <button class="btn orange-btn">Купить</button>
+              </form>
+              <div class="form-success-info">
+                <h3 class="text-center">Спасибо что оставили ваш заказа, наш менеджер свяжется с вами в ближайшее
+                  время</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<div class="modal book-modal modal-order" id="order-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="order-modal-wrapper">
+          <div class="form-success-wrapper">
+            <h2 class="text-center title-font">Чтобы купить заполните форму</h2>
+            <form class="modal-book-form js_form" action="">
+              <input name="name" class="modal-book-input" type="text" placeholder="Имя" required>
+              <input name="phone" class="modal-book-input js_phone-mask" type="tel" placeholder="Телефон" required>
+              <input name="email" class="modal-book-input" type="email" placeholder="Почта" required>
+              <input name="itemIndex" class="js_item-index" type="hidden">
+              <button class="btn orange-btn">Купить</button>
+            </form>
+            <div class="form-success-info">
+              <h3 class="text-center">Спасибо что оставили ваш заказа, наш менеджер свяжется с вами в ближайшее
+                время</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal book-modal modal-order" id="info-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="order-modal-wrapper">
+          <div class="form-success-wrapper">
+            <h2 class="text-center title-font">Оставьте заявку</h2>
+            <form class="modal-book-form js_form" action="">
+              <input name="name" class="modal-book-input" type="text" placeholder="Имя" required>
+              <input name="phone" class="modal-book-input js_phone-mask" type="tel" placeholder="Телефон" required>
+              <input name="email" class="modal-book-input" type="email" placeholder="Почта" required>
+              <button class="btn orange-btn">Купить</button>
+            </form>
+            <div class="form-success-info">
+              <h3 class="text-center">Спасибо что оставили ваш заказа, наш менеджер свяжется с вами в ближайшее
+                время</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal book-modal" id="policy">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2 class="text-center title-font">СОГЛАШЕНИЕ ОБ ОБРАБОТКЕ ПЕРСОНАЛЬНЫХ ДАННЫХ</h2>
+        <p>Данное соглашение об обработке персональных данных разработано в соответствии с законодательством Российской
+          Федерации.</p>
+        <p>Все лица, заполнившие сведения, составляющие персональные данные на данном сайте, а также разместившие иную
+          информацию обозначенными действиями, подтверждают свое согласие на обработку персональных данных и их передачу
+          оператору обработки персональных данных.</p>
+        <p>Под персональными данными Гражданина понимается нижеуказанная информация: Общая информация (Имя, телефон и
+          адрес электронной почты); посетители сайта направляют свои персональные данные для получения подробной
+          информации о франшизе.</p>
+        <p>Гражданин, принимая настоящее Соглашение, выражает свою заинтересованность и полное согласие, что обработка
+          его
+          персональных данных может включать в себя следующие действия: сбор, систематизацию, накопление, хранение,
+          уточнение (обновление, изменение), использование, уничтожение.</p>
+        <p>Гражданин гарантирует: информация, им предоставленная, является полной, точной и достоверной; при
+          предоставлении информации не нарушается действующее законодательство Российской Федерации, законные права и
+          интересы третьих лиц; вся предоставленная информация заполнена Гражданином в отношении себя лично.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="js/scripts.min.js"></script>
 
 </body>

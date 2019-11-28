@@ -50,7 +50,10 @@ a
 
 .font-number
   font-family: $number-font
-  
+
+.title-font
+  font-family: $title-font
+
 .text-center
   text-align: center
 
@@ -675,7 +678,7 @@ header
       color: #565656
       font-size: 30px
 
-  a
+  a, button
     font-size: 14px
     line-height: 40px
     border-radius: 3px
@@ -687,6 +690,7 @@ header
     text-align: center
     text-transform: uppercase
     margin-bottom: 22px
+    cursor: pointer
 
     &:first-child
       border: none
@@ -1015,9 +1019,17 @@ header
   p
     margin-bottom: 0
 
-.modal-dialog
-  margin-top: 60px
+.footer-bot-left
+  text-align: left
 
+.footer-bot-right
+  text-align: right
+
+#policy
+  p:last-child
+    margin-bottom: 0
+
+.modal-dialog
   .e-title
     text-align: center
     padding: 23px 0
@@ -1036,7 +1048,7 @@ header
   transition: 0.3s
   position: absolute
   right: -35px
-  top: 25px
+  top: -35px
   outline: none
   z-index: 100
   background-color: transparent
@@ -1047,15 +1059,11 @@ header
     opacity: 1
     cursor: pointer
 
+  &:focus
+    outline: none
+
   img
     display: block
-
-#basket
-  .modal-dialog
-    width: 980px
-
-  .modal-body
-    padding: 0
 
 .e-basket-wrapper
   display: flex
@@ -1482,6 +1490,39 @@ header
       span
         color: #767676
 
+.modal-order
+  .modal-dialog
+    width: auto
+
+.order-modal-wrapper
+  padding: 30px
+
+  h2
+    font-size: 40px
+
+.form-success-wrapper
+  position: relative
+
+  & > *
+    transition: 0.2s
+
+  &.form-success
+    & > *
+      opacity: 0
+      pointer-events: none
+
+    .form-success-info
+      opacity: 1
+      visibility: visible
+
+.form-success-info
+  opacity: 0
+  visibility: hidden
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
 .modal-book-form
   text-align: center
 
@@ -1492,13 +1533,17 @@ header
   display: block
   max-width: 100%
   width: 500px
-  margin-left: auto
-  margin-right: auto
-  margin-top: 20px
+  margin: 20px auto
   border-radius: 4px
   border: 1px solid #cacaca
   padding: 13px 0 10px 16px
-  margin-bottom: 20px
+
+  &:focus
+    outline: none
+
+  &.invalid
+    border-color: red
+
 
 .e-book-slider
   .slick-arrow
@@ -1957,6 +2002,33 @@ header
 
 .book-translate
   margin-right: -80px
+
+.to-cart
+  position: fixed
+  top: 30px
+  right: 30px
+  background: none
+  border: none
+  padding: 0
+  cursor: pointer
+  visibility: hidden
+  opacity: 0
+  transition: 0.2s
+
+  &:hover
+    .to-cart-img2
+      opacity: 1
+
+  &.show
+    visibility: visible
+    opacity: 1
+
+.to-cart-img2
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 0
+  transition: 0.2s
 
 .modal
   display: none

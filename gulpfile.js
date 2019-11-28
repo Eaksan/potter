@@ -42,11 +42,11 @@ gulp.task('scripts', function() {
 		'app/libs/fancybox-master/dist/jquery.fancybox.js',
 		'app/libs/jQueryFormStyler-master/dist/jquery.formstyler.js',
 		'app/libs/lozad/lozad.min.js',
-		// 'app/libs/jquery-ui/jquery-ui.min.js',
+		'app/libs/maskinput/jquery.mask.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
-	// .pipe(uglify()) // Mifify js (opt.)
+	.pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });
